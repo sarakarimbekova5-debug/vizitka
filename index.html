@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ky">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маккаи Мукаррама — Премиум Визитка</title>
+    <!-- Google Fonts: Cormorant Garamond же Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Башкаруу баскычтары -->
+    <div class="controls-panel">
+        <button id="flip-btn" class="btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12A9 9 0 0 0 6 5.3L3 8" />
+                <path d="M3 3v5h5" />
+                <path d="M3 12a9 9 0 0 0 15 6.7l3-2.7" />
+                <path d="M21 21v-5h-5" />
+            </svg>
+            Арткы бетин көрүү
+        </button>
+        <button id="print-btn" class="btn btn-secondary" onclick="window.print()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9" />
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                <rect x="6" y="14" width="12" height="8" />
+            </svg>
+            Басып чыгаруу
+        </button>
+    </div>
+
+    <div class="stage">
+        <!-- 3D Визитка Контейнери -->
+        <div class="card-container" id="cardContainer">
+            <div class="card" id="card">
+
+                <!-- АЛДЫҢКЫ БЕТ (FRONT SIDE) -->
+                <div class="card-face card-front">
+                    <div class="paper-texture"></div>
+
+                    <div class="corner-ornament">
+                        <svg width="120" height="120" viewBox="0 0 100 100" fill="none" opacity="0.08">
+                            <path d="M50 0 L100 50 L50 100 L0 50 Z" stroke="var(--matte-gold)" stroke-width="1" />
+                            <circle cx="50" cy="50" r="35" stroke="var(--matte-gold)" stroke-width="0.8" />
+                            <path d="M50 15 L85 50 L50 85 L15 50 Z" stroke="var(--matte-gold)" stroke-width="0.5" />
+                        </svg>
+                    </div>
+
+                    <div class="content-wrapper">
+                        <!-- Чоңойтулган Логотип -->
+                        <div class="brand-logo-container">
+                            <img src="111.png" alt="Маккаи Мукаррама Логотиби" class="custom-logo-img">
+                        </div>
+
+                        <!-- Аталышы -->
+                        <div class="brand-header">
+                            <h1 class="brand-title">МАККАИ МУКАРРАМА</h1>
+                            <p class="brand-subtitle">АЯЛДАРДЫН ДИНИЙ ОКУУ БОРБОРУ</p>
+                        </div>
+
+                        <!-- Девиз / Баалуулуктар -->
+                        <div class="divider-wrapper">
+                            <span class="gold-line"></span>
+                            <p class="motto-pills">ИЛИМ • ЫЙМАН • ТАРБИЯ</p>
+                            <span class="gold-line"></span>
+                        </div>
+
+                        <!-- Цитата -->
+                        <div class="quote-block">
+                            <p class="quote-text">«Илим менен жүрөккө нур,<br>Куран менен жашоого береке»</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- АРТКЫ БЕТ (BACK SIDE) -->
+                <div class="card-face card-back">
+                    <div class="paper-texture"></div>
+
+                    <div class="content-wrapper back-content">
+                        <!-- Баш сөз -->
+                        <div class="directions-header">
+                            <h2 class="section-title"> ОКУУ БАГЫТТАРЫ</h2>
+                            <div class="gold-underline"></div>
+                        </div>
+
+                        <!-- Эки багыттын толук программасы -->
+                        <div class="directions-grid">
+
+                            <!-- 1. ИЛИМ -->
+                            <div class="direction-column">
+                                <div class="dir-title-box">
+                                    <span class="dir-num">1.</span>
+                                    <div>
+                                        <h3>ИЛИМ</h3>
+                                        <span class="dir-tag">Араб тили жана диний илимдер (4 жылдык)</span>
+                                    </div>
+                                </div>
+                                <ul class="program-list">
+                                    <li>Араб тили жана грамматикасы</li>
+                                    <li>Куран таануу • Акыйда • Фикх</li>
+                                    <li>Хадис • Сира</li>
+                                    <li>Адеп-ахлак жана тарбия</li>
+                                    <li>Ислам тарыхы жана мурастары</li>
+                                </ul>
+                            </div>
+
+                            <!-- 2. ТАХФИЗ -->
+                            <div class="direction-column">
+                                <div class="dir-title-box">
+                                    <span class="dir-num">2.</span>
+                                    <div>
+                                        <h3>ТАХФИЗ</h3>
+                                        <span class="dir-tag">Куран окуу жана жаттоо</span>
+                                    </div>
+                                </div>
+                                <ul class="program-list">
+                                    <li>Куранды нөлдөн баштап үйрөнүү</li>
+                                    <li>Тамгаларды туура таануу жана окуу</li>
+                                    <li>Тажвид эрежелери</li>
+                                    <li>Куранды туура жана көркөм окуу</li>
+                                    <li>Сүрөлөрдү жана аяттарды жаттоо</li>
+                                    <li>Толук жаттоого багытталган программа</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- Биздин баалуулуктар -->
+                        <div class="values-banner">
+                            <span class="values-label">✨ БИЗДИН БААЛУУЛУКТАР:</span>
+                            <span class="values-text">Билим • Ыйман • Адеп • Тарбия • Куран</span>
+                        </div>
+
+                        <!-- Байланыш маалыматтары -->
+                        <div class="contact-block">
+                            <div class="contact-item">📍 Ош шаары , Гапар Айтиев көчөсү 24. </div>
+                            <div class="contact-item">📞 +996 506 444 808</div>
+                            <div class="contact-item">📱 @diniy_okuu_borboru</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
